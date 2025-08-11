@@ -57,7 +57,8 @@ docker-compose down -v
 ## API
 Base URL: `http://localhost:8080`
 
-**API Documentation**: `/docs` (Swagger UI)
+**API Documentation**: `<URL>/docs` (Swagger UI) - check for API/Schema/formats
+
 
 | Method | Endpoint | Description | Notes |
 |--------|----------|-------------|-------|
