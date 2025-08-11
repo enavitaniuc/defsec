@@ -1,6 +1,9 @@
 # Use the official OpenJDK 17 image as a parent image
 FROM openjdk:17-jdk-slim
 
+# Install curl for health checks
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
 # Set the working directory in the container
 WORKDIR /app
 

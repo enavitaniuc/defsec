@@ -36,7 +36,7 @@ All environment variables are optional with sensible defaults:
 ./gradlew all 
 docker-compose up --build
 ```
-- App: `http://localhost:8080`
+- App: `http://localhost:8080/ping`
 - DB: MySQL on `localhost:3306` (inside compose use host `db`)
 
 Stop:
