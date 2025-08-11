@@ -18,9 +18,17 @@ Simple CRUD service for managing tasks.
 ## Configuration
 - Database connection from app → MySQL service `db` via Docker network
 - App config: `src/main/resources/application.properties`
-- Env vars (optional overrides with defaults):
-  - `DB_USER` (default `appuser`)
-  - `DB_PASSWORD` (default `apppassword`)
+
+### Environment Variables
+All environment variables are optional with sensible defaults:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `MYSQL_ROOT_PASSWORD` | `yourpassword` | MySQL root password |
+| `MYSQL_DATABASE` | `defsecdb` | MySQL database name |
+| `MYSQL_USER` | `appuser` | MySQL application user (used by Spring Boot app) |
+| `MYSQL_PASSWORD` | `apppassword` | MySQL application user password (used by Spring Boot app) |
+ 
 
 ## Run (Docker)
 ```bash
