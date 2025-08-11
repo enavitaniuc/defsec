@@ -36,3 +36,19 @@ This project uses the Gradle Wrapper (`./gradlew`), so no system Gradle install 
 docker-compose up --build
 ```
 Then open `http://localhost:8080/ping`. 
+
+
+## Troubleshooting:
+
+ensure docker-compose is present:
+
+```
+shell> docker-compose up --build
+Command 'docker-compose' not found, but can be installed with:..
+
+# yet docker compose is present:
+shell> docker compose version
+Docker Compose version v2.18.1
+# you are hitting old vs new compose comand, create an alias:
+shel> alias docker-compose='docker compose'
+```
