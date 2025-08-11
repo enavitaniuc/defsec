@@ -31,7 +31,8 @@ This project uses the Gradle Wrapper (`./gradlew`), so no system Gradle install 
 
 ## Run the project
 ```bash
-./gradlew bootJar
+# this will run clean build test bootJar
+./gradlew all
 docker-compose up --build
 ```
-Then open `http://localhost:8080`. 
+Then open `http://localhost:8080/ping`. 
