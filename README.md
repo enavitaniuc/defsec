@@ -171,3 +171,9 @@ Gradle prints a summary with passed/failed counts.
 ```
 
 
+### To be added:
+ - integration tests 
+ - metrics/monitoring
+ - lookup & pagination for GET /tasks
+
+
